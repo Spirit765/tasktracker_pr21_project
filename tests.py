@@ -24,6 +24,3 @@ def test_delete_task():
 
 def test_mark_done():
     global user , tasks
-
-def test_refresh_tasks():
-    global user , tasks
