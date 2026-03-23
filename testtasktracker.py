@@ -1,18 +1,29 @@
 import pytest
-def test_tasks():
-    global current_user
-    global users
-    global tasks
-    tasks = tasks[:]
-    current_user = users[current_user]
-    tasks = tasks[:]
-    tasks.append(current_user)
-def test_users():
-    global current_user
-    global users
-    global tasks
-    tasks = tasks[:]
-    current_user = users[current_user]
-    users = users[:]
-    tasks = tasks[:]
 
+#load_data
+def test_load_data():
+    global user , tasks
+
+def test_save_users():
+    global user , tasks
+
+def test_save_tasks():
+    global tasks
+
+def test_register_tasks():
+    global tasks
+
+def test_login():
+    global user , tasks
+
+def test_add_task():
+    global user , tasks
+
+def test_delete_task():
+    global user , tasks
+
+def test_mark_done():
+    global user , tasks
+
+def test_refresh_tasks():
+    global user , tasks
