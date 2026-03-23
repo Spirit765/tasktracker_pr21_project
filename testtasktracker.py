@@ -13,7 +13,6 @@ def test_save_tasks():
 def test_register_tasks():
     global tasks
 
-
 def test_login():
     global user , tasks
 
