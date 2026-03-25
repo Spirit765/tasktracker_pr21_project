@@ -48,7 +48,7 @@ def test_login_success():
     assert current_user == "alex"
 
 def test_login_failure():
-    register_user("alex", "1234")
+    register_user("alex", "12345")
     assert not login_user("alex", "wrongpass")
     # current_user не меняется при ошибке входа
     assert current_user is None

@@ -29,7 +29,7 @@ def save_users():
         json.dump(users, f, ensure_ascii=False, indent=2)
 
 def save_tasks():
-    with end(TASKS_FILE, "w", encoding="utf-8") as f:
+    with open(TASKS_FILE, "w", encoding="utf-8") as f:
         json.dump(tasks, f, ensure_ascii=False, indent=2)
 
 def register():
