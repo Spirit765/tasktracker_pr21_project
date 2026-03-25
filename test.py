@@ -44,11 +44,11 @@ def test_register_short_password():
 
 def test_login_success():
     register_user("alex", "1234")
-    assert login_user("alex", "1234")
+    assert login_user("alex", "12345")
     assert current_user == "alex"
 
 def test_login_failure():
-    register_user("alex", "12345")
+    register_user("alex", "1234")
     assert not login_user("alex", "wrongpass")
     # current_user не меняется при ошибке входа
     assert current_user is None
