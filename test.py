@@ -44,7 +44,7 @@ def test_register_short_password():
 
 def test_login_success():
     register_user("alex", "1234")
-    assert login_user("alex", "12345")
+    assert login_user("alex", "1234")
     assert current_user == "alex"
 
 def test_login_failure():
