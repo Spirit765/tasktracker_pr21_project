@@ -69,7 +69,6 @@ def register():
     login = entry_login.get().strip()
     password = entry_password.get()
 
-    # ⚠️ WARNING: валидация полей
     if not login:
         logging.warning("Пустое поле логина при регистрации")
         messagebox.showwarning("Ошибка", "Введите логин")
